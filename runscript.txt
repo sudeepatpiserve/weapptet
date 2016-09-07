@@ -1,3 +1,5 @@
 java -jar jwebapp-0.0.1-SNAPSHOT.jar 
 
 and navigate to http://localhost:8089/  will serve a basic test page
+
+well.. i am assuming that you need to connect/test db in different environment . For that i have added database connection settings to the existing project .  You can now adjust the database configurations in application.properties file ; make sure the jar and the properties file are resides in the same directory . Then you need to run the jar file; once the jar is up and running navigate to "http://localhost:8089/testdb" if the connection is succeed; each time you navigate to that endpoint  it will create a table in database and insert current date to table and return those entries  
